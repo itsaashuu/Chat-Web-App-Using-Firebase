@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+        <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title> Materialize CSS !</title>
+    </head>
+    <body>
+    
+           <div class="navbar-fixed">
+    <nav>
+        <div class="nav-wrapper blue">
+            <a href="#" class="brand-logo" style="margin-left:25px">ChatBox</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a class="waves-effect waves-light btn indigo accent-3 hoverable" onclick="LogOut()">Log Out</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    </div>
+        
+        
+        <input text="text" id="message"/> 
+        <button class="btn waves-effect waves-light blue" type="submit" name="action" onclick="sendMessage()">Submit
+    <i class="material-icons right">send</i>
+  </button>
+        
+        
+        <ul style="margin:25px">
+            <li id="chat"> Chat</li>
+        </ul>
+        
+        
+        <!--Scripts-->
+        <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script src="js/materialize.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/3.4.0/firebase.js"></script>
+
+        <script src="js/chatroom.js"></script>
+    </body>
+</html>
